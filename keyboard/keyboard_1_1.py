@@ -51,6 +51,27 @@ def kb1_1_4():
     return kb1_1_4
 
 
+def kb1_1_4_1():
+    kb1_1_4_1 = ReplyKeyboardMarkup(resize_keyboard=True)
+    b1 = KeyboardButton('Назад')
+    kb1_1_4_1.add(b1)
+    return kb1_1_4_1
+
+
+def kb1_1_4_2():
+    kb1_1_4_2 = ReplyKeyboardMarkup(resize_keyboard=True)
+    b1 = KeyboardButton('Назад')
+    kb1_1_4_2.add(b1)
+    return kb1_1_4_2
+
+
+def kb1_1_4_3():
+    kb1_1_4_3 = ReplyKeyboardMarkup(resize_keyboard=True)
+    b1 = KeyboardButton('Назад')
+    kb1_1_4_3.add(b1)
+    return kb1_1_4_3
+
+
 def kb1_1_5():
     kb1_1_5 = ReplyKeyboardMarkup(resize_keyboard=True)
     b1 = KeyboardButton('Особые права (ссылка)')
@@ -59,6 +80,20 @@ def kb1_1_5():
     b4 = KeyboardButton('Назад')
     kb1_1_5.add(b1).add(b2).add(b3).add(b4)
     return kb1_1_5
+
+
+def kb1_1_5_1():
+    kb1_1_5_1 = ReplyKeyboardMarkup(resize_keyboard=True)
+    b1 = KeyboardButton('Назад')
+    kb1_1_5_1.add(b1)
+    return kb1_1_5_1
+
+
+def kb1_1_5_2():
+    kb1_1_5_2 = ReplyKeyboardMarkup(resize_keyboard=True)
+    b1 = KeyboardButton('Назад')
+    kb1_1_5_2.add(b1)
+    return kb1_1_5_2
 
 
 def kb1_1_6():

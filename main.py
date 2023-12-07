@@ -8,7 +8,7 @@ from keyboard.keyboard_general import *
 from keyboard.keyboard_1_1 import *
 from keyboard.keyboard_1_2 import *
 from keyboard.keyboard_1_3 import *
-
+from data_scrr import *
 
 bot = Bot(TOKEN_API)
 dp = Dispatcher(bot)
@@ -23,7 +23,7 @@ async def answer_0(message: types.message):
     stak = format(traceback.extract_stack()[-1][-2][7:])
     prew.append(stak)
     await bot.send_message(chat_id=message.from_user.id,
-                           text="Вы начали работу бота",
+                           text=text0,
                            reply_markup=kb0())#клавиатура
 
 
@@ -54,7 +54,7 @@ async def answer_1_1_1(message: types.message):
     stak = format(traceback.extract_stack()[-1][-2][7:])
     prew.append(stak)
     await bot.send_message(chat_id=message.from_user.id,
-                           text="ТЕКСТ С ССЫЛКАМИ НА САЙТ",
+                           text=text1_1_1,
                            reply_markup=kb1_1_1())
 
 
@@ -64,7 +64,7 @@ async def answer_1_1_2(message: types.message):
     stak = format(traceback.extract_stack()[-1][-2][7:])
     prew.append(stak)
     await bot.send_message(chat_id=message.from_user.id,
-                           text="ТЕКСТ С ССЫЛКОЙ НА САЙТ",
+                           text=text1_1_2,
                            reply_markup=kb1_1_2())
 
 
@@ -74,7 +74,7 @@ async def answer_1_1_3(message: types.message):
     stak = format(traceback.extract_stack()[-1][-2][7:])
     prew.append(stak)
     await bot.send_message(chat_id=message.from_user.id,
-                           text="ТЕКСТ С ССЫЛКОЙ НА САЙТ",
+                           text=text1_1_3,
                            reply_markup=kb1_1_3())
 
 
@@ -84,8 +84,35 @@ async def answer_1_1_4(message: types.message):
     stak = format(traceback.extract_stack()[-1][-2][7:])
     prew.append(stak)
     await bot.send_message(chat_id=message.from_user.id,
-                           text="ТЕКСТ С ССЫЛКОЙ НА САЙТ",
+                           text=text1_1_4,
                            reply_markup=kb1_1_4())
+
+    @dp.message_handler(text='Минимальные баллы для подачи документов')
+    async def answer_1_1_4_1(message: types.message):
+        global prew
+        stak = format(traceback.extract_stack()[-1][-2][7:])
+        prew.append(stak)
+        await bot.send_message(chat_id=message.from_user.id,
+                               text=text1_1_4_1,
+                               reply_markup=kb1_1_4_1())
+
+    @dp.message_handler(text='Кто имеет право сдавать экзамены?')
+    async def answer_1_1_4_2(message: types.message):
+        global prew
+        stak = format(traceback.extract_stack()[-1][-2][7:])
+        prew.append(stak)
+        await bot.send_message(chat_id=message.from_user.id,
+                               text=text1_1_4_2,
+                               reply_markup=kb1_1_4_2())
+
+    @dp.message_handler(text='Расписание вступительных испытаний')
+    async def answer_1_1_4_3(message: types.message):
+        global prew
+        stak = format(traceback.extract_stack()[-1][-2][7:])
+        prew.append(stak)
+        await bot.send_message(chat_id=message.from_user.id,
+                               text=text1_1_4_3,
+                               reply_markup=kb1_1_4_3())
 
 
 @dp.message_handler(text='Особые права и отдельная квота (ссылка на страницу на сайте)')
@@ -94,8 +121,28 @@ async def answer_1_1_5(message: types.message):
     stak = format(traceback.extract_stack()[-1][-2][7:])
     prew.append(stak)
     await bot.send_message(chat_id=message.from_user.id,
-                           text="ТЕКСТ С ССЫЛКОЙ НА САЙТ",
+                           text=text1_1_5,
                            reply_markup=kb1_1_5())
+
+
+@dp.message_handler(text='Особые права')
+async def answer_1_1_5_1(message: types.message):
+    global prew
+    stak = format(traceback.extract_stack()[-1][-2][7:])
+    prew.append(stak)
+    await bot.send_message(chat_id=message.from_user.id,
+                           text=text1_1_5_1,
+                           reply_markup=kb1_1_5_1())
+
+
+@dp.message_handler(text='Отдельная квота')
+async def answer_1_1_5_2(message: types.message):
+    global prew
+    stak = format(traceback.extract_stack()[-1][-2][7:])
+    prew.append(stak)
+    await bot.send_message(chat_id=message.from_user.id,
+                           text=text1_1_5_2,
+                           reply_markup=kb1_1_5_1())
 
 
 @dp.message_handler(text='Абитуриентам, поступающим по целевым договорам')
@@ -104,7 +151,7 @@ async def answer_1_1_6(message: types.message):
     stak = format(traceback.extract_stack()[-1][-2][7:])
     prew.append(stak)
     await bot.send_message(chat_id=message.from_user.id,
-                           text="ТЕКСТ С ССЫЛКОЙ (https://vgpu.org/node/7892) ",
+                           text=text1_1_6,
                            reply_markup=kb1_1_6())
 
 
@@ -114,7 +161,7 @@ async def answer_1_1_7(message: types.message):
     stak = format(traceback.extract_stack()[-1][-2][7:])
     prew.append(stak)
     await bot.send_message(chat_id=message.from_user.id,
-                           text="ТЕКСТ С ССЫЛКОЙ",
+                           text=text1_1_7,
                            reply_markup=kb1_1_7())
 
 
@@ -145,7 +192,7 @@ async def answer_1_2_1(message: types.message):
     stak = format(traceback.extract_stack()[-1][-2][7:])
     prew.append(stak)
     await bot.send_message(chat_id=message.from_user.id,
-                           text="ТЕКСТ С ССЫЛКАМИ НА САЙТ",
+                           text=text1_2_1,
                            reply_markup=kb1_2_1())
 
 
@@ -155,7 +202,7 @@ async def answer_1_2_2(message: types.message):
     stak = format(traceback.extract_stack()[-1][-2][7:])
     prew.append(stak)
     await bot.send_message(chat_id=message.from_user.id,
-                           text="ТЕКСТ С ССЫЛКАМИ НА САЙТ",
+                           text=text1_2_2,
                            reply_markup=kb1_2_2())
 
 
@@ -165,7 +212,7 @@ async def answer_1_2_3(message: types.message):
     stak = format(traceback.extract_stack()[-1][-2][7:])
     prew.append(stak)
     await bot.send_message(chat_id=message.from_user.id,
-                           text="ТЕКСТ С ОБЪЯСНЕНИЕМ ВЫБОРА:",
+                           text=text1_2_3,
                            reply_markup=kb1_2_3())
 
 
@@ -175,7 +222,7 @@ async def answer_1_2_4(message: types.message):
     stak = format(traceback.extract_stack()[-1][-2][7:])
     prew.append(stak)
     await bot.send_message(chat_id=message.from_user.id,
-                           text="ТЕКСТ С СЫЛКОЙ НА САЙТ",
+                           text=text1_2_4,
                            reply_markup=kb1_2_4())
 
 
@@ -185,7 +232,7 @@ async def answer_1_2_5(message: types.message):
     stak = format(traceback.extract_stack()[-1][-2][7:])
     prew.append(stak)
     await bot.send_message(chat_id=message.from_user.id,
-                           text="ТЕКСТ С ССЫЛКОЙ",
+                           text=text1_2_5,
                            reply_markup=kb1_2_5())
 
 
@@ -195,7 +242,7 @@ async def answer_1_2_6(message: types.message):
     stak = format(traceback.extract_stack()[-1][-2][7:])
     prew.append(stak)
     await bot.send_message(chat_id=message.from_user.id,
-                           text="ТЕКСТ С ССЫЛКОЙ (https://vgpu.org/node/7892)",
+                           text=text1_2_6,
                            reply_markup=kb1_2_6())
 
 
@@ -219,14 +266,157 @@ async def answer_1_3(message: types.message):
                            reply_markup=kb1_3())
 
 
+@dp.message_handler(text='Научные специальности')
+async def answer_1_3_1(message: types.message):
+    global prew
+    stak = format(traceback.extract_stack()[-1][-2][7:])
+    prew.append(stak)
+    await bot.send_message(chat_id=message.from_user.id,
+                           text=text1_3_1,
+                           reply_markup=kb1_3_1())
+
+
+@dp.message_handler(text='Сроки приема')
+async def answer_1_3_2(message: types.message):
+    global prew
+    stak = format(traceback.extract_stack()[-1][-2][7:])
+    prew.append(stak)
+    await bot.send_message(chat_id=message.from_user.id,
+                           text=text1_3_2,
+                           reply_markup=kb1_3_2())
+
+
+@dp.message_handler(text='Документы для поступления')
+async def answer_1_3_3(message: types.message):
+    global prew
+    stak = format(traceback.extract_stack()[-1][-2][7:])
+    prew.append(stak)
+    await bot.send_message(chat_id=message.from_user.id,
+                           text=text1_3_3,
+                           reply_markup=kb1_3_3())
+
+
+@dp.message_handler(text='Вступительные испытания')
+async def answer_1_3_4(message: types.message):
+    global prew
+    stak = format(traceback.extract_stack()[-1][-2][7:])
+    prew.append(stak)
+    await bot.send_message(chat_id=message.from_user.id,
+                           text=text1_3_4,
+                           reply_markup=kb1_3_4())
+
+
+@dp.message_handler(text='Индивидуальные достижения')
+async def answer_1_3_5(message: types.message):
+    global prew
+    stak = format(traceback.extract_stack()[-1][-2][7:])
+    prew.append(stak)
+    await bot.send_message(chat_id=message.from_user.id,
+                           text=text1_3_5,
+                           reply_markup=kb1_3_5())
+
+
+
+
+
 @dp.message_handler(text='Как подать документы?')
 async def answer_2(message: types.message):
     global prew
     stak = format(traceback.extract_stack()[-1][-2][7:])
     prew.append(stak)
     await bot.send_message(chat_id=message.from_user.id,
-                           text="Что вас интересует?",
+                           text=text2,
                            reply_markup=kb2())
+
+
+@dp.message_handler(text='Личный кабинет ВГСПУ')
+async def answer_2_1(message: types.message):
+    global prew
+    stak = format(traceback.extract_stack()[-1][-2][7:])
+    prew.append(stak)
+    await bot.send_message(chat_id=message.from_user.id,
+                           text=text2_1,
+                           reply_markup=kb2_1())
+
+
+@dp.message_handler(text='Единый портал государственных услуг')
+async def answer_2_2(message: types.message):
+    global prew
+    stak = format(traceback.extract_stack()[-1][-2][7:])
+    prew.append(stak)
+    await bot.send_message(chat_id=message.from_user.id,
+                           text=text2_2,
+                           reply_markup=kb2_2())
+
+
+@dp.message_handler(text='Лично')
+async def answer_2_3(message: types.message):
+    global prew
+    stak = format(traceback.extract_stack()[-1][-2][7:])
+    prew.append(stak)
+    await bot.send_message(chat_id=message.from_user.id,
+                           text=text2_3,
+                           reply_markup=kb2_3())
+
+
+@dp.message_handler(text='Списки подавших документы')
+async def answer_3(message: types.message):
+    global prew
+    stak = format(traceback.extract_stack()[-1][-2][7:])
+    prew.append(stak)
+    await bot.send_message(chat_id=message.from_user.id,
+                           text=text3,
+                           reply_markup=kb3())
+
+
+@dp.message_handler(text='Позвонить нам')
+async def answer_4(message: types.message):
+    global prew
+    stak = format(traceback.extract_stack()[-1][-2][7:])
+    prew.append(stak)
+    await bot.send_message(chat_id=message.from_user.id,
+                           text=text4,
+                           reply_markup=kb4())
+
+
+@dp.message_handler(text='Написать нам')
+async def answer_5(message: types.message):
+    global prew
+    stak = format(traceback.extract_stack()[-1][-2][7:])
+    prew.append(stak)
+    await bot.send_message(chat_id=message.from_user.id,
+                           text=text5,
+                           reply_markup=kb5())
+
+
+@dp.message_handler(text='Написать нам в VK')
+async def answer_6(message: types.message):
+    global prew
+    stak = format(traceback.extract_stack()[-1][-2][7:])
+    prew.append(stak)
+    await bot.send_message(chat_id=message.from_user.id,
+                           text=text6,
+                           reply_markup=kb6())
+
+
+@dp.message_handler(text='Мы на сайте ВГСПУ')
+async def answer_7(message: types.message):
+    global prew
+    stak = format(traceback.extract_stack()[-1][-2][7:])
+    prew.append(stak)
+    await bot.send_message(chat_id=message.from_user.id,
+                           text=text7,
+                           reply_markup=kb7())
+
+
+@dp.message_handler(text='Новостной канал Приемной комиссии')
+async def answer_8(message: types.message):
+    global prew
+    stak = format(traceback.extract_stack()[-1][-2][7:])
+    prew.append(stak)
+    await bot.send_message(chat_id=message.from_user.id,
+                           text=text8,
+                           reply_markup=kb8())
 
 
 @dp.message_handler(text='Назад')
