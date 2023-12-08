@@ -115,7 +115,7 @@ async def answer_1_1_4(message: types.message):
                                reply_markup=kb1_1_4_3())
 
 
-@dp.message_handler(text='Особые права и отдельная квота (ссылка на страницу на сайте)')
+@dp.message_handler(text='Особые права и отдельная квота')
 async def answer_1_1_5(message: types.message):
     global prew
     stak = format(traceback.extract_stack()[-1][-2][7:])
@@ -155,7 +155,7 @@ async def answer_1_1_6(message: types.message):
                            reply_markup=kb1_1_6())
 
 
-@dp.message_handler(text='Индивидуальные достижения (ссылка на файл на сайте)')
+@dp.message_handler(text='Индивидуальные достижения')
 async def answer_1_1_7(message: types.message):
     global prew
     stak = format(traceback.extract_stack()[-1][-2][7:])
@@ -186,7 +186,7 @@ async def answer_1_2(message: types.message):
                            reply_markup=kb1_2())
 
 
-@dp.message_handler(text='Программы и количество мест (ссылка на файл на сайте)')
+@dp.message_handler(text='Программы и количество мест')
 async def answer_1_2_1(message: types.message):
     global prew
     stak = format(traceback.extract_stack()[-1][-2][7:])
@@ -196,7 +196,7 @@ async def answer_1_2_1(message: types.message):
                            reply_markup=kb1_2_1())
 
 
-@dp.message_handler(text='Календарь приема (ссылка на страницу сайте)')
+@dp.message_handler(text='Календарь приема')
 async def answer_1_2_2(message: types.message):
     global prew
     stak = format(traceback.extract_stack()[-1][-2][7:])
@@ -226,7 +226,7 @@ async def answer_1_2_4(message: types.message):
                            reply_markup=kb1_2_4())
 
 
-@dp.message_handler(text='Индивидуальные достижения (ссылка на файл на сайт) ')
+@dp.message_handler(text='Индивидуальные достижения')
 async def answer_1_2_5(message: types.message):
     global prew
     stak = format(traceback.extract_stack()[-1][-2][7:])
@@ -236,7 +236,7 @@ async def answer_1_2_5(message: types.message):
                            reply_markup=kb1_2_5())
 
 
-@dp.message_handler(text='Абитуриентам, поступающим по целевым договорам (https://vgpu.org/node/7892)')
+@dp.message_handler(text='Абитуриентам, поступающим по целевым договорам')
 async def answer_1_2_6(message: types.message):
     global prew
     stak = format(traceback.extract_stack()[-1][-2][7:])

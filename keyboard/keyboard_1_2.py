@@ -3,12 +3,12 @@ from aiogram.types import KeyboardButton, ReplyKeyboardMarkup
 
 def kb1_2():
     kb1_2 = ReplyKeyboardMarkup(resize_keyboard=True)
-    b1 = KeyboardButton('Программы и количество мест (ссылка на файл на сайте)')
-    b2 = KeyboardButton('Календарь приема (ссылка на страницу сайте)')
+    b1 = KeyboardButton('Программы и количество мест')
+    b2 = KeyboardButton('Календарь приема')
     b3 = KeyboardButton('Документы для поступления')
     b4 = KeyboardButton('Вступительные испытания')
-    b5 = KeyboardButton('Индивидуальные достижения (ссылка на файл на сайт) ')
-    b6 = KeyboardButton('Абитуриентам, поступающим по целевым договорам (https://vgpu.org/node/7892)')
+    b5 = KeyboardButton('Индивидуальные достижения')
+    b6 = KeyboardButton('Абитуриентам, поступающим по целевым договорам')
     b7 = KeyboardButton('ПОДАТЬ ДОКУМЕНТЫ')
     b8 = KeyboardButton('Нет нужной информации? Свяжитесь с нами!')
     b9 = KeyboardButton('Назад')
@@ -32,10 +32,8 @@ def kb1_2_2():
 
 def kb1_2_3():
     kb1_2_3 = ReplyKeyboardMarkup(resize_keyboard=True)
-    b1 = KeyboardButton('Перечень документов (https://vgpu.org/prcom/13283)')
-    b2 = KeyboardButton('Остались вопросы? (+79050616417)')
-    b3 = KeyboardButton('Назад')
-    kb1_2_3.add(b1).add(b2).add(b3)
+    b1 = KeyboardButton('Назад')
+    kb1_2_3.add(b1)
     return kb1_2_3
 
 
