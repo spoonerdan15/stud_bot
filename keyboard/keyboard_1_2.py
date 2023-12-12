@@ -10,9 +10,8 @@ def kb1_2():
     b5 = KeyboardButton('Индивидуальные достижения')
     b6 = KeyboardButton('Абитуриентам, поступающим по целевым договорам')
     b7 = KeyboardButton('ПОДАТЬ ДОКУМЕНТЫ')
-    b8 = KeyboardButton('Нет нужной информации? Свяжитесь с нами!')
-    b9 = KeyboardButton('Назад')
-    kb1_2.add(b1).add(b2).add(b3).add(b4).add(b5).add(b6).add(b7).add(b8).add(b9)
+    b8 = KeyboardButton('Назад')
+    kb1_2.add(b1).add(b2).add(b3).add(b4).add(b5).add(b6).add(b7).add(b8)
     return kb1_2
 
 
