@@ -9,7 +9,7 @@ def kb1_2():
     b4 = KeyboardButton('Вступительные испытания')
     b5 = KeyboardButton('Индивидуальные достижения')
     b6 = KeyboardButton('Абитуриентам, поступающим по целевым договорам')
-    b7 = KeyboardButton('ПОДАТЬ ДОКУМЕНТЫ')
+    b7 = KeyboardButton('Как подать документы?')
     b8 = KeyboardButton('Назад')
     kb1_2.add(b1).add(b2).add(b3).add(b4).add(b5).add(b6).add(b7).add(b8)
     return kb1_2
@@ -56,10 +56,3 @@ def kb1_2_6():
     kb1_2_6.add(b1)
     return kb1_2_6
 
-
-def kb1_2_7():
-    kb1_2_7 = ReplyKeyboardMarkup(resize_keyboard=True)
-    b1 = KeyboardButton('Как подать документы?')
-    b2 = KeyboardButton('Назад')
-    kb1_2_7.add(b1).add(b2)
-    return kb1_2_7

@@ -165,16 +165,6 @@ async def answer_1_1_7(message: types.message):
                            reply_markup=kb1_1_7())
 
 
-@dp.message_handler(text='ПОДАТЬ ДОКУМЕНТЫ')
-async def answer_1_1_8(message: types.message):
-    global prew
-    stak = format(traceback.extract_stack()[-1][-2][7:])
-    prew.append(stak)
-    await bot.send_message(chat_id=message.from_user.id,
-                           text="ТЕКСТ С ССЫЛКОЙ НА ШАГ 2 ",
-                           reply_markup=kb1_1_8())
-
-
 @dp.message_handler(text='Магистратура')
 async def answer_1_2(message: types.message):
     global prew
@@ -244,16 +234,6 @@ async def answer_1_2_6(message: types.message):
     await bot.send_message(chat_id=message.from_user.id,
                            text=text1_2_6,
                            reply_markup=kb1_2_6())
-
-
-@dp.message_handler(text='ПОДАТЬ ДОКУМЕНТЫ')
-async def answer_1_2_7(message: types.message):
-    global prew
-    stak = format(traceback.extract_stack()[-1][-2][7:])
-    prew.append(stak)
-    await bot.send_message(chat_id=message.from_user.id,
-                           text="ТЕКСТ С ССЫЛКОЙ НА ШАГ 2",
-                           reply_markup=kb1_2_7())
 
 
 @dp.message_handler(text='Аспирантура')

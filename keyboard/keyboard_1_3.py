@@ -8,7 +8,7 @@ def kb1_3():
     b3 = KeyboardButton('Документы для поступления')
     b4 = KeyboardButton('Вступительные испытания')
     b5 = KeyboardButton('Индивидуальные достижения')
-    b6 = KeyboardButton('ПОДАТЬ ДОКУМЕНТЫ')
+    b6 = KeyboardButton('Как подать документы?')
     b7 = KeyboardButton('Назад')
     kb1_3.add(b1).add(b2).add(b3).add(b4).add(b5).add(b6).add(b7)
     return kb1_3
