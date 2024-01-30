@@ -1,1 +1,3 @@
-ТЕКСТ С ССЫЛКОЙ https://www.gosuslugi.ru/
+Единый государственный портал госуслуг
+
+https://www.gosuslugi.ru/
