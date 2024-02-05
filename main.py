@@ -266,7 +266,7 @@ async def answer_1_3_2(message: types.message):
                            reply_markup=kb1_3_2())
 
 
-@dp.message_handler(text='Документы для поступления')
+@dp.message_handler(text='Документы для поступления.')
 async def answer_1_3_3(message: types.message):
     global prew
     stak = format(traceback.extract_stack()[-1][-2][7:])
@@ -276,7 +276,7 @@ async def answer_1_3_3(message: types.message):
                            reply_markup=kb1_3_3())
 
 
-@dp.message_handler(text='Вступительные испытания')
+@dp.message_handler(text='Вступительные испытания.')
 async def answer_1_3_4(message: types.message):
     global prew
     stak = format(traceback.extract_stack()[-1][-2][7:])
@@ -286,7 +286,7 @@ async def answer_1_3_4(message: types.message):
                            reply_markup=kb1_3_4())
 
 
-@dp.message_handler(text='Индивидуальные достижения')
+@dp.message_handler(text='Индивидуальные достижения.')
 async def answer_1_3_5(message: types.message):
     global prew
     stak = format(traceback.extract_stack()[-1][-2][7:])
